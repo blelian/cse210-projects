@@ -2,6 +2,8 @@ public class SimpleGoal : Goal
 {
     private bool _isComplete;
 
+    public bool IsDone { get => _isComplete; private set => _isComplete = value; }
+
     public SimpleGoal(string name, string description, int points) 
         : base(name, description, points)
     {
@@ -22,4 +24,6 @@ public class SimpleGoal : Goal
     {
         return _isComplete;
     }
+
+    public override string GoalType => "SimpleGoal";
 }

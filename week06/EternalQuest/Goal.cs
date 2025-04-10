@@ -1,3 +1,6 @@
+using System.Text.Json.Serialization;
+
+[JsonConverter(typeof(GoalConverter))]
 public abstract class Goal
 {
     private string _name;
@@ -11,11 +14,12 @@ public abstract class Goal
         _points = points;
     }
 
-    public string Name => _name;
-    public string Description => _description;
-    public int Points => _points;
+    public string Name { get => _name; private set => _name = value; }
+    public string Description { get => _description; private set => _description = value; }
+    public int Points { get => _points; private set => _points = value; }
 
     public abstract void RecordEvent();
     public abstract string GetGoalDetails();
     public abstract bool IsComplete();
+    public abstract string GoalType { get; }
 }

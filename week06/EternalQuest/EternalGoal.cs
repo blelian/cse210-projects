@@ -12,6 +12,8 @@ public class EternalGoal : Goal
 
     public override bool IsComplete()
     {
-        return false; // Eternal goals are never complete
+        return false;
     }
+
+    public override string GoalType => "EternalGoal";
 }

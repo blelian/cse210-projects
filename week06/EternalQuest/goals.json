@@ -1,0 +1,29 @@
+[
+  {
+    "IsDone": true,
+    "GoalType": "SimpleGoal",
+    "Name": "Run a Marathon",
+    "Description": "Complete a full marathon",
+    "Points": 1000
+  },
+  {
+    "GoalType": "EternalGoal",
+    "Name": "Read Scriptures",
+    "Description": "Read scriptures daily",
+    "Points": 100
+  },
+  {
+    "TargetCount": 10,
+    "CurrentCount": 1,
+    "GoalType": "ChecklistGoal",
+    "Name": "Attend Temple",
+    "Description": "Attend the temple 10 times",
+    "Points": 50
+  },
+  {
+    "GoalType": "NegativeGoal",
+    "Name": "Stop Snacking",
+    "Description": "Avoid snacking between meals",
+    "Points": 200
+  }
+]
